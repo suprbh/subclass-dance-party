@@ -5,7 +5,7 @@ var TapDancer = function(top, left, timeBetweenSteps){
   this.oldStep = Dancer.prototype.step;
   this.timeBetweenSteps = timeBetweenSteps;
   //debugger;
-  this.$node=$('<span onmouseover="mouseEventHandler();" class="tapDancer"></span>');
+  this.$node=$('<span onmouseover="mouseEventHandler(this);" class="tapDancer"></span>');
   this.setPosition(top,left);
   this.step();
   //debugger;

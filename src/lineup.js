@@ -15,7 +15,9 @@ var danceWithEachOther = function(){
 
 };
 
-var mouseEventHandler = function(){
-debugger;
-this.setPosition(Math.random()*$("body").height(), Math.random()*$("body").height());
-}
+var mouseEventHandler = function(context){
+//debugger;
+var $node = $(context);
+$node.css({'top': Math.random()*$("body").height() ,
+  'left': Math.random()*$("body").height()});
+};

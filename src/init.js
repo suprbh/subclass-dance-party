@@ -31,6 +31,9 @@ $(document).ready(function(){
     $('body').append(dancer.$node);
   });
 
+  // $('.tapDancer').mouseover(function(){
+  //   console.log(this);
+  // });
   /*$('.tapDancer').on("mouseover", function(){
     debugger;
     this.setPosition(Math.random()*$("body").height(), Math.random()*$("body").height());
