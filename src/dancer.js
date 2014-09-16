@@ -20,9 +20,10 @@ Dancer.prototype.step = function(){
   //
   //
   //WORKS
-   setTimeout(function(){
-    that.step;
-  }, this.timeBetweenSteps);
+  //debugger;
+  setInterval(function(){
+    that.step();
+  }, that.timeBetweenSteps);
 };
 
 Dancer.prototype.setPosition = function(top, left){

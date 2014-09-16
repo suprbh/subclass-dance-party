@@ -7,7 +7,10 @@ var TapDancer = function(top, right, timeBetweenSteps){
   //debugger;
   this.$node=$('<span class="tapDancer"></span>');
   this.setPosition(top,right);
-  //this.$node = $('<span class="dancer"></span>');
+  this.step();
+  //debugger;
+  // this.image = new Image();
+  // this.image.src='/Users/HR10/Desktop/2014-09-subclass-dance-party/images/thumbnail.gif';
 };
 
 TapDancer.prototype = Object.create(Dancer.prototype);
@@ -22,6 +25,7 @@ TapDancer.prototype.setPosition = function(top, right){
   this.$node.css(styleSettings);
 };
 TapDancer.prototype.step = function(){
+  //debugger;
   //debugger;
   this.oldStep();
   //debugger;
