@@ -2,7 +2,7 @@ var Dancer = function(top, left, timeBetweenSteps){
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
-  this.$node = $('<span class="dancer"></span>');
+  this.$node = $('<span onmouseover="mouseEventHandler();" class="dancer"></span>');
 };
 Dancer.prototype.step = function(){
   //debugger;
@@ -35,3 +35,6 @@ Dancer.prototype.setPosition = function(top, left){
   this.$node.css(styleSettings);
 };
 
+Dancer.prototype.getPosition=function(){
+  return [this.top,this.left];
+};

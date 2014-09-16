@@ -1,12 +1,12 @@
-var TapDancer = function(top, right, timeBetweenSteps){
-  Dancer.call(this,top,right,timeBetweenSteps);
+var TapDancer = function(top, left, timeBetweenSteps){
+  Dancer.call(this,top,left,timeBetweenSteps);
   this.top = top;
-  this.right = right;
+  this.left = left;
   this.oldStep = Dancer.prototype.step;
   this.timeBetweenSteps = timeBetweenSteps;
   //debugger;
-  this.$node=$('<span class="tapDancer"></span>');
-  this.setPosition(top,right);
+  this.$node=$('<span onmouseover="mouseEventHandler();" class="tapDancer"></span>');
+  this.setPosition(top,left);
   this.step();
   //debugger;
   // this.image = new Image();
@@ -16,11 +16,11 @@ var TapDancer = function(top, right, timeBetweenSteps){
 TapDancer.prototype = Object.create(Dancer.prototype);
 TapDancer.prototype.construct = TapDancer;
 
-TapDancer.prototype.setPosition = function(top, right){
+TapDancer.prototype.setPosition = function(top, left){
   //debugger;
   var styleSettings = {
       top: top,
-      right: right
+      left: left
     };
   this.$node.css(styleSettings);
 };

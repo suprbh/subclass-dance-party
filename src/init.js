@@ -30,5 +30,10 @@ $(document).ready(function(){
     //dancer.step();
     $('body').append(dancer.$node);
   });
+
+  /*$('.tapDancer').on("mouseover", function(){
+    debugger;
+    this.setPosition(Math.random()*$("body").height(), Math.random()*$("body").height());
+  });*/
 });
 

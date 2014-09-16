@@ -10,3 +10,12 @@ var lineUp = function(){
   dancers[i].$node.css(styleSettings);
   }
 };
+
+var danceWithEachOther = function(){
+
+};
+
+var mouseEventHandler = function(){
+debugger;
+this.setPosition(Math.random()*$("body").height(), Math.random()*$("body").height());
+}
