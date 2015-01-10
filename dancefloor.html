@@ -4,17 +4,22 @@
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
+    <script src="lib/jquery-ui.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/dancer_1.js"></script>
+    <script src="src/ThirdDancer.js"></script>
     <script src="src/lineup.js"></script>
   </head>
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="TapDancer">add a new dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">Square</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="TapDancer">Triangle</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="ThirdDancer">Trapezoid</a>
       <button id='lineUp' onclick="lineUp();" >Line Dancing</button>
+      <button id='together' onclick="danceTogether();" >Dance Together</button>
+      <!--<button id='animate' onclick="animateDancer();" >Animate Dancer</button>-->
        </div>
     <script src="src/init.js"></script>
   </body>
